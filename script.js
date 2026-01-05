@@ -209,7 +209,7 @@ ${itemNames}
 内訳: ${rarityText}
 
 #供物皿ガチャ
-https://dsjt.github.io/offering-bowl-gacha/`;
+https://dsjt.github.io/bpb_offering_bowl_gacha/`;
 }
 
 /**
