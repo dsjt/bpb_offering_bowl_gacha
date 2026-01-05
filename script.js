@@ -200,7 +200,7 @@ function generateShareText(items) {
         .map(([rarity, count]) => `${rarity}×${count}`)
         .join(' ');
 
-    return `🎲 BackpackBattles 7円供物ガチャ 🎲
+    return `🎲 7円供物ガチャ 🎲
 
 【獲得アイテム】
 ${itemNames}
