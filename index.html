@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackpackBattles 7円供物ガチャ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🎲 供物皿7円ガチャ 🎲</h1>
+        <p class="subtitle">BackpackBattles の供物皿システムを再現</p>
+      </header>
+
+      <main>
+
+        <!-- ★設定セクション全体を修正★ -->
+        <div class="settings-section">
+          <h2 class="settings-toggle">
+            <span class="toggle-icon">▶</span>
+            ⚙️ 設定（クリックで展開）
+          </h2>
+
+          <div class="settings-content hidden">
+            <div class="setting-group">
+              <h3>🎖️ バッジ選択</h3>
+              <div class="checkbox-group">
+                <label>
+                  <input type="checkbox" id="badge-leaf" value="レンジャー">
+                  リーフ（レンジャー）
+                </label>
+                <label>
+                  <input type="checkbox" id="badge-skull" value="リーパー">
+                  スカル（リーパー）
+                </label>
+                <label>
+                  <input type="checkbox" id="badge-wolf" value="バーサーカー">
+                  ウルフ（バーサーカー）
+                </label>
+                <label>
+                  <input type="checkbox" id="badge-magic" value="メイジ">
+                  マジック（メイジ）
+                </label>
+                <label>
+                  <input type="checkbox" id="badge-string" value="アドベンチャラー">
+                  結び糸（アドベンチャラー）
+                </label>
+              </div>
+            </div>
+
+            <div class="setting-group">
+              <h3>🎁 特殊出現アイテム</h3>
+              <div class="checkbox-group">
+                <label>
+                  <input type="checkbox" id="special-treasure" value="富の宝箱">
+                  富の宝箱
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gacha-section">
+          <div class="gacha-section">
+            <button id="gacha-btn" class="gacha-button">
+              ⚡ 7円供物する ⚡
+            </button>
+          </div>
+
+          <div id="result-section" class="result-section hidden">
+            <h2>🎁 獲得アイテム</h2>
+            <div id="result-container" class="result-container">
+              <!-- アイテムがここに表示される -->
+            </div>
+
+            <div class="action-buttons">
+              <button id="again-btn" class="action-button">
+                🔄 もう一度回す
+              </button>
+              <button id="share-btn" class="action-button share-button">
+                🐦 X (Twitter) で共有
+              </button>
+            </div>
+          </div>
+      </main>
+
+      <footer>
+        <p>
+          供物皿のシミュレーション:
+          <a href="https://dsjt.github.io/bpb_offering_bowl_simulator" target="_blank">
+            供物皿シミュレータ
+          </a>
+        </p>
+      </footer>
+      </div>
+
+      <script src="items.js"></script>
+      <script src="script.js"></script>
+  </body>
+</html>
